@@ -1,0 +1,42 @@
+/* === 최종 안정 버전 === */
+
+/* 1. 기본 정렬 복구 (캡챠 깨짐 방지) */
+.modal * {
+    text-align: left;
+}
+
+/* 2. 마지막 줄 (구청장)만 중앙 */
+.modal p:last-child,
+.modal h3:last-child {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 10px auto !important;
+}
+
+/* 3. 뒤로가기 버튼 (왼쪽 아래 + 확실 적용) */
+.back {
+    position: fixed !important;
+
+    left: 10px !important;
+    bottom: 30px !important;
+
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background-color: #fff !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25) !important;
+
+    z-index: 9999 !important;
+}
+
+/* 아이콘 크기 */
+.back svg {
+    width: 22px;
+    height: 22px;
+}
